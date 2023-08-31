@@ -5,7 +5,12 @@ public class Person {
     private String name;
     private LocalDate dateOfBirth;
     private String email;
-    private ArrayList<Book> books = new ArrayList<>();
+    private ArrayList<Book> books = new ArrayList<Book>();
+    
+    // private int age; // 0   
+    // private Integer height; //null
+
+
 
     public Person(String name, LocalDate dateOfBirth, String email) {
         this.name = name;
@@ -14,6 +19,12 @@ public class Person {
     }
 
     public Person() {
+    }
+
+    public void addBookToCollection(Book book) { // book = GOT
+        this.books.add(book);
+
+      
     }
 
     // public Person(String name, String email) {
@@ -59,15 +70,15 @@ public class Person {
         this.name = name;
     }
     
-    public void setBook(ArrayList<Book> books) {
+    public void setBooks(ArrayList<Book> books) {
         this.books = books;
     }
 
-    public ArrayList<Book> getBook() {
+    public ArrayList<Book> getBooks() {
         return books;
     }
 
     public String toString() {
-        return "Name: " + name + " Email: " + email + " Date of birth: " + dateOfBirth + " Book: " + books;
+        return "Name: " + name + " Email: " + email + " Date of birth: " + dateOfBirth + " Books: " + books;
     }
 }

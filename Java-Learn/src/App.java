@@ -21,14 +21,6 @@ public class App {
     Book harryPotter = new Book("Harry Potter", "J. K. Rowling");
     Book gameOfThrones = new Book("Game of Thrones", "George R. R. Martin");
 
-   // jasarat.getBook();
-    jasarat.addBookToCollection(harryPotter);
-    jasarat.addBookToCollection(gameOfThrones);
-
-
-    tahmid.addBookToCollection(harryPotter);
-    tahmid.addBookToCollection(alchemist);
-    
     // jasarat.setBook(alchemist);
     // tahmid.setBook(gameOfThrones);
 
