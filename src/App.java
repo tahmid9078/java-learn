@@ -44,6 +44,17 @@ public class App {
     thePatient.setTitle("The Patient");
     thePatient.setPageNo(30);
 
+
+    AudioBook snowWhite = new AudioBook("SnowWhite", "oop", 60);   
+    AudioBook aliceInWonderLand = new AudioBook();
+
+    aliceInWonderLand.setAuthor("nic");
+    aliceInWonderLand.setTitle(" AliceInWonderLand");
+    aliceInWonderLand.setRunTime(80);
+    
+    System.out.println(snowWhite.toString());
+    System.out.println(aliceInWonderLand.toString());
+
   }
 }
 
