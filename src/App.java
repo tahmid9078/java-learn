@@ -14,26 +14,35 @@ public class App {
     jasarat.setDateOfBirth(LocalDate.of(1998, 3, 19));
     jasarat.setEmail("jasarat@abc.com");
 
-    // System.out.println(tahmid.getName() + " age: " + tahmid.getAge());
-    // System.out.println(jasarat.getName() + " age: " + jasarat.getAge());
-
     Book alchemist = new Book("The Alchemist", "Paulo Coelho");
     Book harryPotter = new Book("Harry Potter", "J. K. Rowling");
     Book gameOfThrones = new Book("Game of Thrones", "George R. R. Martin");
 
-   // jasarat.getBook();
+
+    
+    // jasarat.getBook();
     jasarat.addBookToCollection(harryPotter);
     jasarat.addBookToCollection(gameOfThrones);
-
-
+    
+    
     tahmid.addBookToCollection(harryPotter);
     tahmid.addBookToCollection(alchemist);
     
     // jasarat.setBook(alchemist);
     // tahmid.setBook(gameOfThrones);
-
-    System.out.println(jasarat.toString());    
+    
+    System.out.println(jasarat.toString());
     System.out.println(tahmid.toString());
+   
+    
+    // INHERITANCE
+
+    HardCopyBook abc = new HardCopyBook("abc", "xyz", 20);   
+    HardCopyBook thePatient = new HardCopyBook();
+
+    thePatient.setAuthor("xyz");
+    thePatient.setTitle("The Patient");
+    thePatient.setPageNo(30);
 
   }
 }

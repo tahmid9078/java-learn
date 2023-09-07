@@ -5,7 +5,7 @@ public class Person {
     private String name;
     private LocalDate dateOfBirth;
     private String email;
-    private ArrayList<Book> books = new ArrayList<Book>();
+    private ArrayList<Book> books = new ArrayList<>();
     
     // private int age; // 0   
     // private Integer height; //null
@@ -79,6 +79,6 @@ public class Person {
     }
 
     public String toString() {
-        return "Name: " + name + " Email: " + email + " Date of birth: " + dateOfBirth + " Books: " + books;
+        return "Name: " + this.name + " Email: " + this.email + " Date of birth: " + this.dateOfBirth + " Books: " + this.books;
     }
 }
